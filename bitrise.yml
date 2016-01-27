@@ -1,6 +1,11 @@
 format_version: 1.1.0
 default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
 
+app:
+  envs:
+  # define these in your .bitrise.secrets.yml
+  - A_SECRET_PARAM: $A_SECRET_PARAM
+
 workflows:
   test:
     steps:
