@@ -46,7 +46,7 @@ envs:
 If you want to use your step in your project's `bitrise.yml`:
 
 1. git push the step into it's repository
-2. reference it in your `bitrise.yml` with the `git::` step reference style:
+2. reference it in your `bitrise.yml` with the `git::PUBLIC-GIT-CLONE-URL@BRANCH` step reference style:
 
 ```
 - git::https://github.com/user/my-step.git@branch:
