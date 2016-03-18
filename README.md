@@ -33,12 +33,12 @@ envs:
 
 ## How to create your own step
 
-1. Create your step's repository
+1. Create a git repository for your step
 2. Copy the [step template](https://github.com/bitrise-steplib/step-template) files into your repository
 3. Fill the `step.sh` with your functionality
 4. Wire out your inputs to `step.yml` (`inputs` field)
-5. Fill the `step.yml`
-6. Provide values for the inputs in the `bitrise.yml`
+5. Fill out the other parts of the `step.yml` too
+6. Provide test values for the inputs in the `bitrise.yml`
 7. Run your step with `bitrise run test` - if it works, you're ready
 
 ## How to contribute to this Step
