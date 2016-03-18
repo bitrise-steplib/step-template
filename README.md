@@ -41,6 +41,17 @@ envs:
 6. Provide test values for the inputs in the `bitrise.yml`
 7. Run your step with `bitrise run test` - if it works, you're ready
 
+NOTE:
+If you want to use your step on bitrise.io you can include it like:
+
+```
+- git::https://github.com/user/my-step.git@master:
+   title: My step
+   inputs:
+   - my_input_1: "my value 1"
+   - my_input_2: "my value 2"
+```
+
 ## How to contribute to this Step
 
 1. Fork this repository
