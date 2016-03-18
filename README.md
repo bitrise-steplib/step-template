@@ -31,6 +31,33 @@ envs:
 - A_SECRET_PARAM_TWO: the value for secret two
 ```
 
+## How to create your own step
+
+1. Create a new git repository for your step (don't fork the [step template](https://github.com/bitrise-steplib/step-template))
+2. Copy the [step template](https://github.com/bitrise-steplib/step-template) files into your repository
+3. Fill the `step.sh` with your functionality
+4. Wire out your inputs to `step.yml` (`inputs` field)
+5. Fill out the other parts of the `step.yml` too
+6. Provide test values for the inputs in the `bitrise.yml`
+7. Run your step with `bitrise run test` - if it works, you're ready
+
+**NOTE:**
+
+If you want to use your step in your project's `bitrise.yml`:
+
+1. git push the step into it's repository
+2. reference it in your bitrise.yml with the git:: step reference style:
+
+```
+- git::https://github.com/user/my-step.git@master:
+   title: My step
+   inputs:
+   - my_input_1: "my value 1"
+   - my_input_2: "my value 2"
+```
+
+You can find more examples in [bitrise CLI](https://github.com/bitrise-io/bitrise/blob/master/_examples/tutorials/steps-and-workflows/bitrise.yml#L65)
+
 ## How to contribute to this Step
 
 1. Fork this repository
