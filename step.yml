@@ -20,6 +20,8 @@ host_os_tags:
   - osx-10.10
 project_type_tags:
   - ios
+  - android
+  - xamarin
 type_tags:
   - script
 is_requires_admin_user: true
@@ -39,9 +41,8 @@ inputs:
         Description of this input.
 
         Can be Markdown formatted text.
-      is_expand: false
+      is_expand: true
       is_required: true
-      is_dont_change_value: true
       value_options: []
 outputs:
   - EXAMPLE_STEP_OUTPUT:
@@ -52,6 +53,3 @@ outputs:
         Description of this output.
 
         Can be Markdown formatted text.
-      is_expand: false
-      is_required: true
-      is_dont_change_value: true
