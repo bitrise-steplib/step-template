@@ -31,6 +31,9 @@ deps:
   brew:
   - name: git
   - name: wget
+  apt_get:
+  - name: git
+  - name: wget
 run_if: ""
 inputs:
   - example_step_input: Default Value - you can leave this empty if you want to
