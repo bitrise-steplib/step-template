@@ -41,6 +41,8 @@ envs:
 6. Provide test values for the inputs in the `bitrise.yml`
 7. Run your step with `bitrise run test` - if it works, you're ready
 
+__For Step development guidelines & best practices__ check this documentation: [https://github.com/bitrise-io/bitrise/blob/master/_docs/step-development-guideline.md](https://github.com/bitrise-io/bitrise/blob/master/_docs/step-development-guideline.md).
+
 **NOTE:**
 
 If you want to use your step in your project's `bitrise.yml`:
